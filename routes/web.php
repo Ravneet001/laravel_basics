@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('about', 'PagesController@about')->name('about');
-
+Route::get('contact', 'PagesController@contact')->name('contact');
 
 Route::get('test/{firstname?}/{lastname?}/{age?}', 'TestController@index')
 ->where([
@@ -29,6 +29,9 @@ Route::get('foo', [
 
 Route::get('meet-to-inder', 'TestController@meetToInder')->name('meet.to.inder');
 Route::get('meet-to-ravneet', 'TestController@meetToRavneet')->name('meet.to.ravneet');
+
+
+Route::get('main', 'PagesController@master')->name('master');
 
 
 
